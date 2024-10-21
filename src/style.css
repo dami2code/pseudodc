@@ -12,17 +12,19 @@ body {
 
 .header-container .header .channel { 
     display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
     top: 0;
     padding: 15px;
-    border: 0.01em solid #fff;
+    border: none;
     border-radius: 0.5em;
-    background-color: transparent
+    background-color: rgba(128, 128, 128, 0.301);
 }
 
 .header-container .header .channel {
-    justify-content: flex-start;
-    gap: 30em;
+    justify-content: space-between;
 }
 
 .header-container .header .channel p {
@@ -43,6 +45,7 @@ body {
     vertical-align: middle;
     opacity: 0.8;
     padding: 5px;
+    gap: 3px;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -50,3 +53,127 @@ body {
 .header-container .header .channel i:hover {
     background-color: rgba(128, 128, 128, 0.301);
 }
+
+.header-container .header .user {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 10px;;
+}
+
+.header-container .header .user .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.message-container .message-input {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 1em;
+    width: 100%;
+}
+
+.message-container .message-input input {
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 50%;
+    font-size: 25px;
+    color: #fff;
+    background-color:rgba(128, 128, 128, 0.301);
+}
+
+.message-container .message-input i {
+    display: flex;
+    position: absolute;
+    bottom: 0.5em;
+    right: 14.5em;
+    padding: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.message-container .message-input i:hover {
+    background-color: rgba(128, 128, 128, 0.301);
+    opacity: 0.8;
+}
+
+/* .message-container .messages {
+    display: flex
+} */
+
+.message-container .messages .receive {
+    display: flex;
+    position: absolute;
+    top: 5em;
+    margin-left: 2em;
+    padding: 10px;
+    border-radius: 11px;
+    background-color: rgba(128, 128, 128, 0.301);
+}
+
+.message-container .messages .receive .image img {
+    display: inline-flex;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.message-container .messages .receive p {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.message-container .messages .receive p:nth-child(1) {
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.message-container .messages .receive p:nth-child(2) {
+    font-size: 25px;
+    color: #fff;
+} 
+
+.message-container .messages .sent {
+    display: flex;
+    position: absolute;
+    top: 10em;
+    margin-left: 2em;
+    padding: 10px;
+    border-radius: 11px;
+    background-color: rgba(128, 128, 128, 0.301);
+}
+
+.message-container .messages .sent .image img {
+    display: inline-flex;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.message-container .messages .sent p {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.message-container .messages .sent p:nth-child(1) {
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.message-container .messages .sent p:nth-child(2) {
+    font-size: 25px;
+    color: #fff;
+} 
