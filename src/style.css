@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+}
+
+body {
+    background-color: #000000ce;
+    height: 100vh;
+}
+
+.header-container .header .channel { 
+    display: flex;
+    width: 100%;
+    top: 0;
+    padding: 15px;
+    border: 0.01em solid #fff;
+    border-radius: 0.5em;
+    background-color: transparent
+}
+
+.header-container .header .channel {
+    justify-content: flex-start;
+    gap: 30em;
+}
+
+.header-container .header .channel p {
+    font-size: 25px;
+    vertical-align: middle;
+    color: #fff;
+    padding-left: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.header-container .header .channel p:hover {
+    background-color: rgba(128, 128, 128, 0.301);
+}
+
+.header-container .header .channel i {
+    font-size: 25px;
+    vertical-align: middle;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.header-container .header .channel i:hover {
+    background-color: rgba(128, 128, 128, 0.301);
+}
